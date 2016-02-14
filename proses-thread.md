@@ -48,7 +48,6 @@
     }
     ~~~
 
-\newpage
 
 ### Latihan
 
@@ -71,7 +70,6 @@ Contoh keluaran:
 
     Rossi 3
 
-\newpage
 
 <!--
 
@@ -94,7 +92,6 @@ int main()
 
 -->
 
-\newpage
 
 ## Exec
 
@@ -167,7 +164,6 @@ int main()
     }
     ~~~
 
-\newpage
 
 ## Wait
 
@@ -205,7 +201,6 @@ int main()
     }
     ~~~
 
-\newpage
 
 ## Zombie process
 
@@ -247,7 +242,6 @@ int main()
     12029 pts/2    Z+     0:00      \_ [zombie] <defunct>
     ~~~
 
-\newpage
 
 ### Latihan
 
@@ -271,7 +265,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 ## Signal
 
@@ -305,7 +298,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 ## Kill
 
@@ -344,7 +336,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 ## Pause
 
@@ -376,7 +367,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 ## Tugas: *Simple Shell*
 
@@ -389,7 +379,6 @@ Kumpulkan dengan format berikut ini.
     To: auriza.akbar@gmail.com
 -->
 
-\newpage
 
 # Thread
 
@@ -416,7 +405,6 @@ Kompilasi tambahkan flag `-pthread`
 
 - membuat thread keluar dengan status `return`.
 
-\newpage
 
 Contoh `thread_hello.c`:
 
@@ -446,7 +434,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 ### Latihan
 
@@ -470,7 +457,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 <!--
 
@@ -499,7 +485,6 @@ int main()
 Sekarang, buat satu buah thread untuk menjumlahkan nilai semua elemen array A dengan fungsi `array_sum()`.
 Thread utama hanya membuat dan menunggu thread ini selesai.
 
-\newpage
 
 <!--
 
@@ -542,7 +527,6 @@ int main()
 Oke, sekarang gunakan 2 buah thread untuk menjumlahkan nilai semua elemen array A.
 Pastikan pembagian kerja antara kedua thread seimbang, yaitu tiap thread memproses $16/2 = 8$ elemen.
 
-\newpage
 
 <!--
 
@@ -586,7 +570,6 @@ int main()
 Bisa? Sekarang gunakan 4 buah thread untuk menjumlahkan nilai semua elemen array A.
 Pastikan pembagian kerja antara keempat thread seimbang, yaitu tiap thread memproses $16/4 = 4$ elemen.
 
-\newpage
 
 <!--
 
@@ -629,7 +612,6 @@ int main()
 
 -->
 
-\newpage
 
 # Sinkronisasi Thread
 
@@ -663,7 +645,6 @@ int sem_destroy(sem_t *sem);
 - `post`: `sem++`
 - `destroy`: menghapus `sem`
 
-\newpage
 
 ## Mutual Exclusion
 
@@ -688,7 +669,6 @@ int pthread_mutex_destroy(pthread_mutex_t *mutex);
 - `unlock`: melepaskan kunci critical section
 - `destroy`: menghapus `mutex`
 
-\newpage
 
 ### Latihan
 
@@ -730,7 +710,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 <!--
 
@@ -780,7 +759,6 @@ int main()
 
 Jika sudah, ubah sinkronisasi dari menggunakan semaphore menjadi mutex.
 
-\newpage
 
 <!--
 
@@ -828,7 +806,6 @@ int main()
 
 -->
 
-\newpage
 
 ### Latihan
 
@@ -874,7 +851,6 @@ int main()
 }
 ~~~
 
-\newpage
 
 <!--
 
