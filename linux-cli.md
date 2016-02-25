@@ -267,6 +267,47 @@ ln [OPTION] TARGET LINK-NAME
 ```
 - `-s`: membuat *symbolic link*
 
+## *tar* dan *zip*
+
+melakukan *extract* atau *compress* file berekstensi `.tar` atau `.zip`
+### `zip`
+```bash
+zip -r compressed_filename.zip foldername
+```
+### `unzip`
+```bash
+unzip file.zip -d destination_folder
+```
+- `-d` : *extract* file ke folder tertentu
+
+### `tar`
+melakukan *extract* atau *compress* terhadap file berekstensi `.tar*`
+```bash
+tar -{parameters} tarfile.tar*
+```
+*parameters* :
+- `-c` : create files
+- `-x` : extract files
+- `-v` : verbose, print the file names as they are extracted one by one
+- `-z` :file is a "gzipped" (.gz) file
+- `-j` :file is a "gzipped" (.bz2) file
+- `-f` : use the following tar archive for the operation
+
+## `Challenge for Lab P1`
+untuk mengulang + memperlancar materi praktikum, sekaligus sebagai tantangan
+
+`ketentuan`
+- challenge ini memanfaatkan `ssh` ke sumber challenge-nya. silahkan akses ke sumber dengan perintah ini
+
+```bash
+ssh -p 22 {userAnda}@IPsumber:2222
+```
+
+- masing-masing praktikan memiliki username dan folder tersendiri
+- challenge ini terdiri dari 4 task yang terbagi menjadi 4 folder
+- tantangan setiap task dapat dibaca di file `README`
+- kerjakan tantangan tersebut sesuai dengan README.
+- jika dimungkinkan, akan ada task `kejutan` di akhir challenge
 
 ## *Stream*, *Pipe*, dan *Redirect*
 
