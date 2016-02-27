@@ -300,7 +300,7 @@ untuk mengulang + memperlancar materi praktikum, sekaligus sebagai tantangan
 - challenge ini memanfaatkan `ssh` ke sumber challenge-nya. silahkan akses ke sumber dengan perintah ini
 
 ```bash
-ssh -p 22 {userAnda}@IPsumber:2222
+ssh -p 22 {userAnda}@IPsumber
 ```
 
 - masing-masing praktikan memiliki username dan folder tersendiri
