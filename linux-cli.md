@@ -331,6 +331,39 @@ stdin  +-----> |   PROSES   | ------>  stdout
 
 ```
 
+Kita bisa membuat program C sederhana yang menggunakan ketiga *stream* tersebut.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char input[1000];
+	
+	// baca input dari stdin
+	fgets(input, 1000, stdin);
+	
+	if (strlen(input) < 10) {
+		// cetak error ke stderr
+		fprintf(stderr, "Error: input kurang dari 10 karakter!\n");
+	}
+	
+	// cetak output ke stdout
+	fprintf(stdout, "Input kamu: %s\n", input);
+	
+	return 0;
+}
+```
+
+Lakukan kompilasi dan jalankan
+
+```sh
+gcc -o test test.c
+./test
+```
+
+
 ### *Pipe*
 
 *Pipe* (karakter `|`) menyalurkan `stdout` dari suatu proses menjadi `stdin` dari proses berikutnya. *Pipe* berguna untuk membuat *pipeline*, yaitu gabungan beberapa perintah untuk mengerjakan suatu tugas.
