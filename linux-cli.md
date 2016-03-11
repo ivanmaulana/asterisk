@@ -500,10 +500,11 @@ cat [OPTION] [FILE]...
 ### `split`
 Memecah *file* menjadi beberapa bagian.
 ```bash
-split [OPTION] FILE
+split [OPTION] FILE [PREFIX]
 ```
 - `-b SIZE`: pecah per *SIZE* *byte*
 - `-l N`: pecah per *N* baris
+- `-d`: gunakan angka untuk menomori setiap pecahan
 
 ### `sort`
 Mengurutkan tiap baris pada *file* teks
@@ -540,7 +541,7 @@ tail [OPTION] FILE
 - `-n K`: tampilkan K baris terakhir
 
 ### `tr`
-Translasi dari karakter set pertama ke karakter set kedua.
+Translasi dari karakter set pertama ke karakter set kedua. Perintah `tr` hanya bisa membaca dari stdin, sehingga jika ingin mengolah file, isinya harus di-pipe atau di-redirect ke command `tr` ini.
 ```bash
 tr [OPTION] SET1 [SET2]
 ```
@@ -574,10 +575,7 @@ paste [OPTION] [FILE]
 
 ### Latihan
 
-- [HackerRank text processing challenges](https://www.hackerrank.com/domains/shell/textpro)
-- Buat satu *shell script* untuk membaca sebuah *file* teks,
-    - menentukan *n* kata yang paling banyak muncul, dan
-    - mencetak kata-kata tersebut beserta frekuensinya dengan urutan menurun
+[HackerRank text processing challenges](https://www.hackerrank.com/domains/shell/textpro)
 
 
 <!--
