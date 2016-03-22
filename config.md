@@ -4,9 +4,14 @@
 
 File ini disimpan di: '`/etc/asterisk/`'
 
-Mem *'back up'* file asli.
+Mem-*back up* file asli.
 ```bash
 sudo cp /etc/asterisk/sip.conf /etc/asterisk/sip.conf.orig
+```
+
+mengedit *file*
+```bash
+sudo vi /etc/asterisk/sip.conf
 ```
 
 ## Perintah Dasar
