@@ -15,7 +15,7 @@ sudo vi /etc/asterisk/sip.conf
 ```
 
 Jika kamu tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
-Now Hold “Shift+:” let go again, and now type “wq!” followed by pressing enter.
+Sekarang tekan '`Shift + :`' kemudian lepaskan kembali, dan sekarang ketik '`wq!`' dilanjutkan dengan menekan '`Enter`'.
 
 ## Perintah Dasar
 
