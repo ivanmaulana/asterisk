@@ -17,6 +17,13 @@ sudo vi /etc/asterisk/sip.conf
 Jika kamu tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
 Sekarang tekan '`Shift + :`' kemudian lepaskan kembali, dan sekarang ketik '`wq!`' dilanjutkan dengan menekan '`Enter`'.
 
+Ingatlah untuk me-*restart* atau me-*reload* asterisk setelah mengedit '`sip.conf`' dengan cara:
+```bash
+sudo asterisk -rx reload
+atau
+sudo asterisk -r
+```
+
 ## Perintah Dasar
 
 ### `echo`
