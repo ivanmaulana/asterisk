@@ -36,69 +36,69 @@ Beberapa hal yang perlu diperhatikan tentang konfigurasi:
 ### `SUDO VI /ETC/ASTERISK/SIP.CONF`
 ```bash
 [general]
-context=internal
-allowguest=no
-allowoverlap=no
-bindport=5060
-bindaddr=0.0.0.0
-srvlookup=no
-disallow=all
-allow=ulaw
-alwaysauthreject=yes
-canreinvite=no
-nat=yes
-session-timers=refuse
-externhost=*domainname.com*
-externrefresh=15
-localnet=*192.168.1.0/255.255.255.0*
+context = internal
+allowguest = no
+allowoverlap = no
+bindport = 5060
+bindaddr = 0.0.0.0
+srvlookup = no
+disallow = all
+allow = ulaw
+alwaysauthreject = yes
+canreinvite = no
+nat = yes
+session-timers = refuse
+externhost = *domainname.com*
+externrefresh = 15
+localnet = *192.168.1.0/255.255.255.0*
 
 [7001]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7002]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7003]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7004]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7005]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7006]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7007]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 
 [7008]
-type=friend
-host=dynamic
-secret=*password*
-context=internal
+type = friend
+host = dynamic
+secret = *password*
+context = internal
 ```
 
 
