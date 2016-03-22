@@ -14,15 +14,26 @@ mengedit *file*
 sudo vi /etc/asterisk/sip.conf
 ```
 
-Jika kamu tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
+Jika anda tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
 Sekarang tekan '`Shift + :`' kemudian lepaskan kembali, dan sekarang ketik '`wq!`' dilanjutkan dengan menekan '`Enter`'.
 
 Ingatlah untuk me-*restart* atau me-*reload* asterisk setelah mengedit '`sip.conf`' dengan cara:
 ```bash
 sudo asterisk -rx reload
-atau
-sudo asterisk -r
 ```
+
+untuk *stop, start, and restart* asterisk dari *init side* anda dapat mengetik ini:
+```bash
+sudo /etc/init.d/asterisk start
+```
+
+
+Beberapa hal yang perlu diperhatikan tentang konfigurasi:
+- Apapun yang berhubungan dengan [voipms] adalah rincian konfigurasi dari registrar saya, itu tidak lain dari nomor telepon saya beli untuk digunakan sebagai cara untuk berbicara dengan PSTN (Public switched telephone network).
+- Juga apapun yang berhubungan dengan [700x] adalah ekstensi yang saya gunakan pada ponsel vo-ip yang berbeda atau klien pada komputer saya. Anda bisa men-download sebuah software yang disebut "X-Lite" dan login dengan ekstensi dan IP dari Ubuntu Asterisk server atau domain nama Anda jika Anda memiliki satu.
+- Ingatlah untuk mengedit apa-apa yang di *Italic*, hal tersebut bisa *password*, *nama domain* (jika menggunakan satu) atau *localnet* tersebut.
+
+
 
 ## Perintah Dasar
 
