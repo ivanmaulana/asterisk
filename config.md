@@ -2,13 +2,11 @@
 
 ## sip.conf
 
-File ini disimpan di.
+File ini disimpan di: '`/etc/asterisk/`'
+
 ```bash
-/etc/asterisk/
-```
-
 sudo cp /etc/asterisk/sip.conf /etc/asterisk/sip.conf.orig
-
+```
 
 ## Perintah Dasar
 
