@@ -4,7 +4,7 @@
 
 File ini disimpan di: '`/etc/asterisk/`'
 
-Mem-*back up* file asli.
+Mem-*back up* *file* asli.
 ```bash
 sudo cp /etc/asterisk/sip.conf /etc/asterisk/sip.conf.orig
 ```
@@ -13,6 +13,9 @@ mengedit *file*
 ```bash
 sudo vi /etc/asterisk/sip.conf
 ```
+
+Jika kamu tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
+Now Hold “Shift+:” let go again, and now type “wq!” followed by pressing enter.
 
 ## Perintah Dasar
 
