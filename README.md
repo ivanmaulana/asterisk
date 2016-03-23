@@ -25,6 +25,38 @@ tentunya dengan berbagai tambahan hardware.
 
 ## Cara Pemakaian
 
+### `Instalasi`
+
+jalankan semua perintah ini dalam keadaan superuser
+```bash
+sudo -i
+```
+
+Kemudian masuk ke folder `/usr/src/`
+```bash
+cd /usr/src/
+```
+
+download file git ini, dengan cara 
+```bash
+git clone http://code.cs.ipb.ac.id/ivanmaulana/asterisk.git
+```
+
+masuk ke folder asterisk
+```bash
+cd asterisk
+```
+
+jalankan shell instalasi pertama `firstInstall.sh`
+```bash
+./firstInstall.sh
+```
+
+Kemudian PC akan me-restart otomatis, dan jalankan shell instalasi kedua `secondInstall.sh` di folder `/usr/src/asterisk`
+```bash
+./secondInstall.sh
+```
+
 Setelah Instalasi selesai dilakukan, *user* hanya perlu menggunakan akun yang telah dibuat di *softphone* masing-masing
 dan menghubungkannya ke server VoIP.
 Kemudian, masing-masing *user* dapat saling menghubungi satu sama lain.
