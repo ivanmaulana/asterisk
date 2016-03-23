@@ -2,7 +2,7 @@
 
 pear install Console_Getopt
 
-cd /usr/src
+cd asterisk
 wget https://iksemel.googlecode.com/files/iksemel-1.4.tar.gz
 tar xf iksemel-1.4.tar.gz
 cd iksemel-*
@@ -10,10 +10,7 @@ cd iksemel-*
 make
 make install
 
-cd /usr/src
-git clone http://code.cs.ipb.ac.id/ivanmaulana/asterisk.git
-
-cd asterisk
+cd ..
 
 tar -xjvf pjproject-2.4.tar.bz2
 rm -f pjproject-2.4.tar.bz2
