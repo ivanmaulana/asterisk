@@ -32,8 +32,7 @@ sudo /etc/init.d/asterisk start
 
 
 Beberapa hal yang perlu diperhatikan tentang konfigurasi:
-- Apapun yang berhubungan dengan [voipms] adalah rincian konfigurasi dari registrar saya, itu tidak lain dari nomor telepon yang saya beli untuk digunakan sebagai cara untuk berbicara dengan PSTN (Public switched telephone network).
-- Juga apapun yang berhubungan dengan [700x] adalah ekstensi yang saya gunakan pada ponsel vo-ip yang berbeda atau klien pada komputer saya. Anda bisa men-download sebuah software yang disebut "X-Lite" dan login dengan ekstensi dan IP dari Ubuntu Asterisk server atau domain nama Anda jika Anda memiliki satu.
+- Apapun yang berhubungan dengan [700x] adalah ekstensi yang saya gunakan pada ponsel vo-ip yang berbeda atau klien pada komputer saya. Anda bisa men-download sebuah software yang disebut "X-Lite" dan login dengan ekstensi dan IP dari Ubuntu Asterisk server atau domain nama Anda jika Anda memiliki satu.
 - Ingatlah untuk mengedit apa-apa yang diberi tanda 'petik', hal tersebut bisa *password*, *nama domain* (jika menggunakan satu) atau *localnet* tersebut.
 
 ### `SUDO VI /ETC/ASTERISK/SIP.CONF`
