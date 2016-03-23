@@ -33,7 +33,7 @@ sudo /etc/init.d/asterisk start
 
 Beberapa hal yang perlu diperhatikan tentang konfigurasi:
 - Apapun yang berhubungan dengan [700x] adalah ekstensi yang saya gunakan pada ponsel vo-ip yang berbeda atau klien pada komputer saya. Anda bisa men-download sebuah software yang disebut "X-Lite" dan login dengan ekstensi dan IP dari Ubuntu Asterisk server atau domain nama Anda jika Anda memiliki satu.
-- Ingatlah untuk mengedit apa-apa yang diberi tanda 'petik', hal tersebut bisa *password*, *nama domain* (jika menggunakan satu) atau *localnet* tersebut.
+- Ingatlah untuk mengedit *password*, *nama domain* (jika menggunakan satu) atau *localnet* tersebut.
 
 ### `SUDO VI /ETC/ASTERISK/SIP.CONF`
 ```bash
@@ -50,56 +50,56 @@ alwaysauthreject = yes
 canreinvite = no
 nat = yes
 session-timers = refuse
-externhost = 'domainname.com'
+externhost = domainname.com
 externrefresh = 15
-localnet = '192.168.1.0/255.255.255.0'
+localnet = 192.168.1.0/255.255.255.0
 
 [7001]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7002]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7003]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7004]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7005]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7006]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7007]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 
 [7008]
 type = friend
 host = dynamic
-secret = 'password'
+secret = password
 context = internal
 ```
 
