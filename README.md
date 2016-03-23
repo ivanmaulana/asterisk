@@ -61,6 +61,13 @@ Setelah Instalasi selesai dilakukan, *user* hanya perlu menggunakan akun yang te
 dan menghubungkannya ke server VoIP.
 Kemudian, masing-masing *user* dapat saling menghubungi satu sama lain.
 
+## Spesifikasi 
+
+- `Version` : Asterisk 13
+- `Encoder` : G.722, G.729, H.263
+- `Transport Protocol` : UDP
+- `Port` : 5060
+- `Communication Protocol` : SIP
 
 ## Pembahasan
 
