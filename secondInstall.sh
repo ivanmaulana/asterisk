@@ -29,19 +29,7 @@ make
 make install
 cd ..
 
-tar xvfz asterisk-13-current.tar.gz
-rm -f asterisk-13-current.tar.gz
-cd asterisk-*
-contrib/scripts/install_prereq install
-./configure
-contrib/scripts/get_mp3_source.sh
-make menuselect
-
-make
-make install
-make config
-ldconfig
-update-rc.d -f asterisk remove
+sudo apt-get install asterisk
 
 cd /var/lib/asterisk/sounds
 wget http://downloads.asterisk.org/pub/telephony/sounds/asterisk-core-sounds-en-wav-current.tar.gz
