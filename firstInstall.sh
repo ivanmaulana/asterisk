@@ -8,5 +8,7 @@ apt-get install -y build-essential linux-headers-`uname -r` openssh-server apach
   libsqlite3-dev pkg-config automake libtool autoconf git unixodbc-dev uuid uuid-dev\
   libasound2-dev libogg-dev libvorbis-dev libcurl4-openssl-dev libical-dev libneon27-dev libsrtp0-dev\
   libspandsp-dev libmyodbc
+  
+chmod -R 777 *
 
 reboot
