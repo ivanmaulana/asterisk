@@ -123,11 +123,12 @@ sudo cp /etc/asterisk/extensions.conf /etc/asterisk/extensions.conf.orig
 sudo vi /etc/asterisk/extensions.conf
 ```
 
+
 Untuk `menyimpan file`, `start`, `stop`, dan `restart` caranya sama seperti `sip.conf` yang ada diatas
 
 Beberapa hal yang perlu diperhatikan tentang konfigurasi ini:
-- Apapun yang berhubungan dengan [voipms-outbound], [voipms-inbound] dan dua hal lainnya dari yang diatas merupakan configurasi detail dari register (vo-ip.ms).
-- Hal ini digunakan untuk berinteraksi agar dapat terhubung dengan PSTN (Public switched telephone network).
+- Apapun yang berhubungan dengan [voipms-outbound], [voipms-inbound] dan dua hal lainnya yang berasal dari sip.conf diatas, merupakan configurasi detail dari register (vo-ip.ms).
+- Hal ini digunakan untuk berinteraksi agar dapat terhubung dengan PSTN (Public Switched Telephone Network).
 
 ### Konfigurasi user VoIP Server
 
