@@ -2,7 +2,6 @@
 
 pear install Console_Getopt
 
-cd asterisk
 wget https://iksemel.googlecode.com/files/iksemel-1.4.tar.gz
 tar xf iksemel-1.4.tar.gz
 cd iksemel-*
