@@ -35,8 +35,14 @@ Beberapa hal yang perlu diperhatikan tentang konfigurasi:
 - Apapun yang berhubungan dengan [700x] adalah ekstensi yang saya gunakan pada ponsel vo-ip yang berbeda atau klien pada komputer saya. Anda bisa men-download sebuah software yang disebut "X-Lite" dan login dengan ekstensi dan IP dari Ubuntu Asterisk server atau domain nama Anda jika Anda memiliki satu.
 - Ingatlah untuk mengedit *password*, *nama domain* (jika menggunakan satu) atau *localnet* tersebut.
 
-### `SUDO VI /ETC/ASTERISK/SIP.CONF`
+### `Konfigurasi user VoIP Server`
+- User VoIP server ada 8.
+- User : 7001 - 7008,
+- Password : password
+
 ```bash
+sudo vi /etc/asterisk/sip.conf
+
 [general]
 context = internal
 allowguest = no
