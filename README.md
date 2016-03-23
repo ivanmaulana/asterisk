@@ -5,7 +5,7 @@
 ## Anggota Kelompok
 - `Ivan Maulana - G64130076`
 - `Andy Eka Saputra`
-- `Fahmi Solahudin`
+- `Fahmi Solahudin - G64130095`
 - `Wildan Muhammad`
 
 ## Sekilas tentang Asterisk
