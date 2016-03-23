@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update && apt-get upgrade -y 
+apt-get update
 
 apt-get install -y build-essential linux-headers-`uname -r` openssh-server apache2 mysql-server\
   mysql-client bison flex php5 php5-curl php5-cli php5-mysql php-pear php5-gd curl sox\
