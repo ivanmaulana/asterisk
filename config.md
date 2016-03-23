@@ -108,3 +108,107 @@ host = dynamic
 secret = password
 context = internal
 ```
+
+## Extension.conf
+
+Tempat penyimpanan: '`/etc/asterisk/`'
+
+*Back up* *file*:
+```bash
+sudo cp /etc/asterisk/extensions.conf /etc/asterisk/extensions.conf.orig
+```
+
+*Edit* *file*:
+```bash
+sudo vi /etc/asterisk/extensions.conf
+```
+
+Untuk `menyimpan file`, `start`, `stop`, dan `restart` caranya sama seperti `sip.conf` yang ada diatas
+
+Beberapa hal yang perlu diperhatikan tentang konfigurasi ini:
+- Apapun yang berhubungan dengan [voipms-outbound], [voipms-inbound] dan dua hal lainnya dari yang diatas merupakan configurasi detail dari register (vo-ip.ms).
+- Hal ini digunakan untuk berinteraksi agar dapat terhubung dengan PSTN (Public switched telephone network).
+
+### Konfigurasi user VoIP Server
+
+```bash
+sudo vi /etc/asterisk/extensions.conf
+
+[internal]
+
+exten => s,1,Answer()
+exten => s,n,PlayBack(custom-draalincom)
+exten => s,n,PlayBack(custom-menuoptions)
+
+exten => s,n,Background(vm-press)
+exten => s,n,Background(digits/1)
+exten => s,n,Background(vm-for)
+exten => s,n,Background(custom-work)
+
+exten => s,n,Background(vm-press)
+exten => s,n,Background(digits/2)
+exten => s,n,Background(vm-for)
+exten => s,n,Background(custom-cell)
+
+exten => s,n,Background(vm-press)
+exten => s,n,Background(digits/3)
+exten => s,n,Background(vm-for)
+exten => s,n,Background(custom-home)
+
+exten => s,n,WaitExten()
+
+exten => 1,1,Dial(SIP/7001,60)
+
+exten => 7001,1,Answer()
+exten => 7001,2,Dial(SIP/7001,60)
+exten => 7001,3,Playback(vm-nobodyavail)
+exten => 7001,4,VoiceMail(7001@main)
+exten => 7001,5,Hangup()
+
+exten => 7002,1,Answer()
+exten => 7002,2,Dial(SIP/7002,60)
+exten => 7002,3,Playback(vm-nobodyavail)
+exten => 7002,4,VoiceMail(7002@main)
+exten => 7002,5,Hangup()
+
+exten => 7003,1,Answer()
+exten => 7003,2,Dial(SIP/7003,60)
+exten => 7003,3,Playback(vm-nobodyavail)
+exten => 7003,4,VoiceMail(7003@main)
+exten => 7003,5,Hangup()
+
+exten => 7004,1,Answer()
+exten => 7004,2,Dial(SIP/7004,60)
+exten => 7004,3,Playback(vm-nobodyavail)
+exten => 7004,4,VoiceMail(7004@main)
+exten => 7004,5,Hangup()
+
+exten => 7005,1,Answer()
+exten => 7005,2,Dial(SIP/7005,60)
+exten => 7005,3,Playback(vm-nobodyavail)
+exten => 7005,4,VoiceMail(7005@main)
+exten => 7005,5,Hangup()
+
+exten => 7006,1,Answer()
+exten => 7006,2,Dial(SIP/7006,60)
+exten => 7006,3,Playback(vm-nobodyavail)
+exten => 7006,4,VoiceMail(7006@main)
+exten => 7006,5,Hangup()
+
+exten => 7007,1,Answer()
+exten => 7007,2,Dial(SIP/7007,60)
+exten => 7007,3,Playback(vm-nobodyavail)
+exten => 7007,4,VoiceMail(7007@main)
+exten => 7007,5,Hangup()
+
+exten => 7008,1,Answer()
+exten => 7008,2,Dial(SIP/7008,60)
+exten => 7008,3,Playback(vm-nobodyavail)
+exten => 7008,4,VoiceMail(7008@main)
+exten => 7008,5,Hangup()
+
+exten => 8500,1,VoicemailMain()
+exten => 70022,1,VoicemailMain(7002@main)
+exten => 8500,n,Hangup()
+
+```
