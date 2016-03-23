@@ -2,27 +2,30 @@
 
 ## sip.conf
 
-File ini disimpan di: '`/etc/asterisk/`'
+Tempat penyimpanan: '`/etc/asterisk/`'
 
-Mem-*back up* *file* asli.
+*back up* *file*:
 ```bash
 sudo cp /etc/asterisk/sip.conf /etc/asterisk/sip.conf.orig
 ```
 
-mengedit *file*
+Edit *file*:
 ```bash
 sudo vi /etc/asterisk/sip.conf
 ```
 
-Jika anda tidak tahu cara menyimpan menggunakan vi, petama-tama tekan '`ESC`' kemudian lepaskan.
-Sekarang tekan '`Shift + :`' kemudian lepaskan kembali, dan sekarang ketik '`wq!`' dilanjutkan dengan menekan '`Enter`'.
+Cara menyimpan menggunakan vi:
+- Tekan '`ESC`' kemudian lepaskan.
+- Tekan '`Shift + :`' kemudian lepaskan kembali.
+- Ketik '`wq!`'.
+- Tekan '`Enter`'.
 
-Ingatlah untuk me-*restart* atau me-*reload* asterisk setelah mengedit '`sip.conf`' dengan cara:
+*restart* atau *reload* asterisk: (dilakukan setelah mengedit '`sip.conf`')
 ```bash
 sudo asterisk -rx reload
 ```
 
-untuk *stop, start, and restart* asterisk dari *init side* anda dapat mengetik ini:
+*stop, start, and restart* asterisk dari *init side*:
 ```bash
 sudo /etc/init.d/asterisk start
 ```
