@@ -1,4 +1,4 @@
-# Linux/UNIX *Command Line Interface*
+# Konfigrasi Asterisk
 
 ## sip.conf
 
