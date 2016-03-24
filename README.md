@@ -4,9 +4,9 @@
 
 ## Anggota Kelompok
 - `Ivan Maulana - G64130076`
-- `Andy Eka Saputra`
+- `Andy Eka Saputra - G64130032`
 - `Fahmi Solahudin - G64130095`
-- `Wildan Muhammad`
+- `Wildan Muhammad - G64130107`
 
 ## Sekilas tentang Asterisk
 
@@ -19,9 +19,11 @@ tentunya dengan berbagai tambahan hardware.
 ## Apa saja yang ada di project ini ?
 - `Instalasi` Dapat dilihat di *installation.md*
 - `Konfigurasi` Dapat dilihat di *config.md*
-- `Maintenance` Dapat dilihat di *maintenance.md*
-- `Otomatisasi` Dapat dilihat di *auto.md*
-- `Cara Penggunaan` Dapat dilihat di *how-to.md*
+- `Script Shell` Dapat dilihat di *firstInstall.sh* dan *secondInstall.sh*
+- `Konfigurasi SIP` Dapat dilihat di *sip.conf*
+- `Konfigurasi FUngsi Extensions` Dapat dilihat di *extensions.conf*
+- `Plugin SIP` dapat dilihat di *pjproject-2.4.tar.bz2*
+- `Plugin JSON` dapat dilihat di *jansson.tar.gz*
 
 ## Cara Pemakaian
 
