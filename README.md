@@ -25,7 +25,7 @@ tentunya dengan berbagai tambahan hardware.
 - `Plugin SIP` dapat dilihat di *pjproject-2.4.tar.bz2*
 - `Plugin JSON` dapat dilihat di *jansson.tar.gz*
 
-## Cara Pemakaian
+## Cara Instalasi
 
 ### `Instalasi`
 
@@ -46,6 +46,7 @@ git clone http://code.cs.ipb.ac.id/ivanmaulana/asterisk.git
 
 masuk ke folder asterisk
 ```bash
+chmod -R 777 asterisk
 cd asterisk
 ```
 
@@ -62,6 +63,14 @@ Kemudian PC akan me-restart otomatis, dan jalankan shell instalasi kedua `second
 Setelah Instalasi selesai dilakukan, *user* hanya perlu menggunakan akun yang telah dibuat di *softphone* masing-masing
 dan menghubungkannya ke server VoIP.
 Kemudian, masing-masing *user* dapat saling menghubungi satu sama lain.
+
+### Contoh Pengaturan Client
+
+- Install Aplikasi Softphone. Misalkan untuk pengguna Android : `CSIPSimple`
+- Buka Pengaturan *Account*
+- User : `7001 - 7008`
+- Server : `172.18.88.74:5060`
+- Password : `password`
 
 ## Spesifikasi 
 
